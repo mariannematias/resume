@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{>head}}
+  	</head>
+
+	<body>
+		<div id="vertex-container">
+			{{>header}}
+
+			<section class="profile align-center" id ="profile_section">
+				<h1><strong>{{page.profile_section.name}}</strong></h1>
+				<h3>{{page.profile_section.position}}</h3>
+				<p>{{page.profile_section.description}}</p>
+				<div class="slide-out">
+					<span><a href="#" id="slide-btn"><i class="fas fa-cog"></i></a></span>
+					<div class="color-box" style="display:none;">
+						<p>CHOOSE COLOR</p>
+						<a class="color-btn active" id="color1"></a>
+						<a class="color-btn" id="color2"></a>
+						<a class="color-btn" id="color3"></a>
+						<a class="color-btn" id="color4"></a>
+						<a class="color-btn" id="color5"></a>
+						<a class="color-btn" id="color6"></a>
+					</div>
+				</div>
+			</section>
+
+			<section class="nav align-center" id="navigation">
+				<ul class="nav-list">
+					<li><a href="#experience" class="nav-link">{{page.navigation.experience.text}}</a></li>
+					<li><a href="#education" class="nav-link">{{page.navigation.education.text}}</a></li>
+					<li><a href="#skills" class="nav-link">{{page.navigation.skills.text}}</a></li>
+					<li><a href="#testimonial" class="nav-link">{{page.navigation.testimonial.text}}</a></li>
+					<li><a href="#portfolio" class="nav-link">{{page.navigation.portfolio.text}}</a></li>
+					<li><a href="#contact" class="nav-link">{{page.navigation.contact.text}}</a></li>
+				</ul>
+			</section>
+			
+			{{>footer}}
+		</div>
+
+		<!-- Vertex library for enabling site updates from https://www.vertex360.co -->
+    	<script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
+
+		{{>scripts}}
+		
+	</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "profile_section": {
+    "img_profile": "images/profile.jpg",
+    "name": "Franklin K. Walsh",
+    "position": "Designer and Front-end Developer",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet."
+  },
+  "navigation": {
+    "experience": {
+      "text": "Experience"
+    },
+    "education": {
+      "text": "Education"
+    },
+    "skills": {
+      "text": "Skills"
+    },
+    "testimonial": {
+      "text": "Testimonials"
+    },
+    "portfolio": {
+      "text": "Portfolio"
+    },
+    "contact": {
+      "text": "Contact"
+    }
+  }
+}
