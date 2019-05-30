@@ -1,28 +1,69 @@
 {
   "profile_section": {
-    "img_profile": "images/profile.jpg",
+    "img_profile": "https://lh3.googleusercontent.com/NlpIGDJmYxMmMv70woRuqQONj94SBJkE7ng4EPcQzXaWgUZGpZrAqHIrnxc343BUzlfPOW1BFkBXhN-D6W5ZyvZYQJA",
     "name": "Franklin K. Walsh",
     "position": "Designer and Front-end Developer",
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet."
   },
-  "navigation": {
-    "experience": {
-      "text": "Experience"
-    },
-    "education": {
-      "text": "Education"
-    },
+  "experiences_section": {
+    "title": "Work Experiences"
+  },
+  "education_section": {
+    "title": "Education"
+  },
+  "skills_section": {
+    "title": "Professional Skills",
+    "subtitle": "Top Skills",
+    "subtitle2": "Other Skills",
     "skills": {
-      "text": "Skills"
+      "skill1": {
+        "name": "HTML/CSS",
+        "level": "Expert, 6 years",
+        "percent": "95",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient"
+      },
+      "skill2": {
+        "name": "JavaScript",
+        "level": "Expert, 6 years",
+        "percent": "85",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient"
+      },
+      "skill3": {
+        "name": "Angular & Vue",
+        "level": "Advanced, 4 years",
+        "percent": "78",
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient"
+      }
     },
-    "testimonial": {
-      "text": "Testimonials"
-    },
-    "portfolio": {
-      "text": "Portfolio"
-    },
-    "contact": {
-      "text": "Contact"
+    "tags": "HTML5, CSS3, SASS, LESS, Git, RUBY, PHP, Spanish, French"
+  },
+  "testimonial_section": {
+    "title": "Testimonials",
+    "testimonials": {
+      "testi1": {
+        "description": "Sed massa leo, aliquet non velit eu, volutpat vulputate odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse porttitor metus eros, ut fringilla nulla auctor a.",
+        "name": "Christina Jensen",
+        "position": "Senior Developer, Twitter"
+      },
+      "testi2": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hinc ceteri particulas arripere conati suam quisque videro voluit afferre sententiam. Sapientem locupletat ipsa natura, cuius divitias Epicurus parabiles esse.",
+        "name": "Rob Olson",
+        "position": "Product Manager, Apple"
+      },
+      "testi3": {
+        "description": "Sed massa leo, aliquet non velit eu, volutpat vulputate odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse porttitor metus eros, ut fringilla nulla auctor a.",
+        "name": "Austin Ward",
+        "position": "Lead Manager, StartUp"
+      }
     }
+  },
+  "portfolio_section": {
+    "title": "Portfolio"
+  },
+  "contact_section": {
+    "title": "Get in touch",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hinc ceteri particulas arripere conati suam quisque videro voluit afferre sententiam. Sapientem locupletat ipsa natura, cuius divitias Epicurus parabiles esse docuit. Sin eam, quam Hieronymus, ne fecisset idem, ut voluptatem illam Aristippi in prima commendatione poneret. Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus; Nunc dicam de voluptate, nihil scilicet novi, ea tamen, quae te ipsum probaturum esse confidam.",
+    "email": "frank@yourdomain.com",
+    "phone": "012-3456-7890"
   }
 }

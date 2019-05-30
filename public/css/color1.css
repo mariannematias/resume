@@ -7,3 +7,30 @@ header {
 .nav {
     background: #007888;
 }
+.font-color {
+    color: #00BCD4;
+}
+.work-right {
+    border-left: 3px solid #00BCD4;
+}
+.item-list:before {
+    border: 3px solid #00BCD4;
+}
+.item-list:after {
+    background: #00BCD4;
+}
+.testi-box span {
+    background: #00BCD4;
+}
+.portfolio-box .inner-box {
+    background: #00BCD4;
+}
+.carousel-indicators li {
+    background: #00BCD4;
+}
+.carousel-indicators li.active {
+    background: #007888;
+}
+.btn-download {
+    background: #008fa1;
+}

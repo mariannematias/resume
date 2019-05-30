@@ -1,0 +1,36 @@
+header {
+    background: #FF5722;
+}
+.profile {
+    background: #ff4409;
+}
+.nav {
+    background: #d53300;
+}
+.font-color {
+    color: #FF5722;
+}
+.work-right {
+    border-left: 3px solid #FF5722;
+}
+.item-list:before {
+    border: 3px solid #FF5722;
+}
+.item-list:after {
+    background: #FF5722;
+}
+.testi-box span {
+    background: #FF5722;
+}
+.portfolio-box .inner-box {
+    background: #FF5722;
+}
+.carousel-indicators li {
+    background: #FF5722;
+}
+.carousel-indicators li.active {
+    background: #d53300;
+}
+.btn-download {
+    background: #ee3900;
+}

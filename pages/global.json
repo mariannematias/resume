@@ -1,28 +1,48 @@
 {
   "site_name": "Resume",
   "img_favicon": "https://lh3.googleusercontent.com/5SVrpLI9utkuVJbQb48cpD3tar59mgWaWSAM73Ghj8dxFJMD2UOzkhO5ptWDd2uV2eqgSvDCSa-Ad8aOrygXx6nv",
-  "header": {
-    "social": {
-      "linkedin": {
-        "link": "https://www.linkedin.com",
-        "show_or_hide": true
-      },
-      "twitter": {
-        "link": "https://www.twitter.com",
-        "show_or_hide": true
-      },
-      "facebook": {
-        "link": "https://www.facebook.com",
-        "show_or_hide": true
-      },
-      "skype": {
-        "link": "https://www.skype.com",
-        "show_or_hide": true
-      },
-      "gmail": {
-        "link": "https://www.gmail.com",
-        "show_or_hide": true
-      }
+  "social": {
+    "linkedin": {
+      "link": "https://www.linkedin.com",
+      "show_or_hide": true
+    },
+    "twitter": {
+      "link": "https://www.twitter.com",
+      "show_or_hide": true
+    },
+    "facebook": {
+      "link": "https://www.facebook.com",
+      "show_or_hide": true
+    },
+    "skype": {
+      "link": "https://www.skype.com",
+      "show_or_hide": true
+    },
+    "gmail": {
+      "link": "https://www.gmail.com",
+      "show_or_hide": true
     }
-  }
+  },
+  "btn_text": "Download my resume",
+  "navigation": {
+    "experience": {
+      "text": "Experience"
+    },
+    "education": {
+      "text": "Education"
+    },
+    "skills": {
+      "text": "Skills"
+    },
+    "testimonial": {
+      "text": "Testimonials"
+    },
+    "portfolio": {
+      "text": "Portfolio"
+    },
+    "contact": {
+      "text": "Contact"
+    }
+  },
+  "copyright": "Template Copyright @ 3rd Wave Media"
 }

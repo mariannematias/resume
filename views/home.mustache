@@ -13,7 +13,7 @@
 				<p>{{page.profile_section.description}}</p>
 				<div class="slide-out">
 					<span><a href="#" id="slide-btn"><i class="fas fa-cog"></i></a></span>
-					<div class="color-box" style="display:none;">
+					<div class="color-box">
 						<p>CHOOSE COLOR</p>
 						<a class="color-btn active" id="color1"></a>
 						<a class="color-btn" id="color2"></a>
@@ -27,22 +27,206 @@
 
 			<section class="nav align-center" id="navigation">
 				<ul class="nav-list">
-					<li><a href="#experience" class="nav-link">{{page.navigation.experience.text}}</a></li>
-					<li><a href="#education" class="nav-link">{{page.navigation.education.text}}</a></li>
-					<li><a href="#skills" class="nav-link">{{page.navigation.skills.text}}</a></li>
-					<li><a href="#testimonial" class="nav-link">{{page.navigation.testimonial.text}}</a></li>
-					<li><a href="#portfolio" class="nav-link">{{page.navigation.portfolio.text}}</a></li>
-					<li><a href="#contact" class="nav-link">{{page.navigation.contact.text}}</a></li>
+					<li><a href="#experiences_section" class="nav-link">{{global.navigation.experience.text}}</a></li>
+					<li><a href="#education_section" class="nav-link">{{global.navigation.education.text}}</a></li>
+					<li><a href="#skills_section" class="nav-link">{{global.navigation.skills.text}}</a></li>
+					<li><a href="#testimonial_section" class="nav-link">{{global.navigation.testimonial.text}}</a></li>
+					<li><a href="#portfolio_section" class="nav-link">{{global.navigation.portfolio.text}}</a></li>
+					<li><a href="#contact_section" class="nav-link">{{global.navigation.contact.text}}</a></li>
 				</ul>
 			</section>
+
+			<div class="gray-bg">
+				<section class="experience" id="experiences_section">
+					<div class="container section-box">
+						<h3 class="align-center">{{page.experiences_section.title}}</h3>
+						<div class="exp-timeline">
+							<div class="col-md-8 col-sm-12 work-right">
+								{{#jobs}}
+								<div class="item-list">
+									<h5>
+										{{company}}
+										<span class="ml-auto"><i class="fas fa-map-marker-alt"></i>{{location}}</span>
+									</h5>
+									<div class="job-details">
+										<h5 class="font-color">{{position}}</h5>
+										<p>{{start}} - {{end}}</p>
+									</div>
+									<p>{{description}}</p>
+								</div>
+								{{/jobs}}
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="education" id="education_section">
+					<div class="container section-box">
+						<h3 class="align-center">{{page.education_section.title}}</h3>
+						<div class="row">
+							{{#schools}}
+							<div class="col-md-4 school-list">
+								<h5 class="font-color">{{major}}</h5>
+								<p class="name">{{name}}</p>
+								<p class="date">{{dateRange}}</p>
+								<p>{{description}}</p>
+							</div>
+							{{/schools}}
+						</div>
+					</div>
+				</section>
+
+				<section class="skills" id="skills_section">
+					<div class="container section-box">
+						<h3 class="align-center">{{page.skills_section.title}}</h3>
+						<p class="align-center subtitle">{{page.skills_section.subtitle}}</p>
+						<div class="row">
+							<div class="col-md-4 skill-list m-top-1 align-center">
+								<div class="chart color1" data-percent="{{page.skills_section.skills.skill1.percent}}"><span>{{page.skills_section.skills.skill1.percent}}%</span></div>
+								<h4 class="m-top-2">{{page.skills_section.skills.skill1.name}}</h4>
+								<p class="sub">{{page.skills_section.skills.skill1.level}}</p>
+								<p>{{page.skills_section.skills.skill1.description}}</p>
+							</div>
+							<div class="col-md-4 skill-list m-top-1 align-center">
+								<div class="chart color1" data-percent="{{page.skills_section.skills.skill2.percent}}"><span>{{page.skills_section.skills.skill2.percent}}%</span></div>
+								<h4 class="m-top-2">{{page.skills_section.skills.skill2.name}}</h4>
+								<p class="sub">{{page.skills_section.skills.skill2.level}}</p>
+								<p>{{page.skills_section.skills.skill2.description}}</p>
+							</div>
+							<div class="col-md-4 skill-list m-top-1 align-center">
+								<div class="chart color1" data-percent="{{page.skills_section.skills.skill3.percent}}"><span>{{page.skills_section.skills.skill3.percent}}%</span></div>
+								<h4 class="m-top-2">{{page.skills_section.skills.skill3.name}}</h4>
+								<p class="sub">{{page.skills_section.skills.skill3.level}}</p>
+								<p>{{page.skills_section.skills.skill3.description}}</p>
+							</div>
+						</div>
+						<p class="align-center subtitle m-top-4">{{page.skills_section.subtitle2}}</p>
+						<div class="skill-box" id="skill-tags"></div>
+					</div>
+				</section>
+
+				<section class="testimonial" id="testimonial_section">
+					<div class="container section-box">
+						<h3 class="align-center">{{page.testimonial_section.title}}</h3>
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel" data-slide-to="1"></li>
+								<li data-target="#carousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="testi-box">
+										<span><i class="fas fa-quote-left"></i></span>
+										<div class="move-right">
+											<h4>{{page.testimonial_section.testimonials.testi1.description}}</h4>
+											<p>{{page.testimonial_section.testimonials.testi1.name}}</p>
+											<p class="sub">{{page.testimonial_section.testimonials.testi1.position}}</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="testi-box">
+										<span><i class="fas fa-quote-left"></i></span>
+										<div class="move-right">
+											<h4>{{page.testimonial_section.testimonials.testi2.description}}</h4>
+											<p>{{page.testimonial_section.testimonials.testi2.name}}</p>
+											<p class="sub">{{page.testimonial_section.testimonials.testi2.position}}</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="testi-box">
+										<span><i class="fas fa-quote-left"></i></span>
+										<div class="move-right">
+											<h4>{{page.testimonial_section.testimonials.testi3.description}}</h4>
+											<p>{{page.testimonial_section.testimonials.testi3.name}}</p>
+											<p class="sub">{{page.testimonial_section.testimonials.testi3.position}}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="portfolio" id="portfolio_section">
+					<div class="container section-box">
+						<h3 class="align-center">{{page.portfolio_section.title}}</h3>
+						<div class="row">
+							{{#projects}}
+							<div class="col-md-3 col-sm-12 portfolio-box">
+								<img src="{{{image}}}"/>
+								<div class="inner-box">
+									<h5>{{name}}</h5>
+									<p class="about">{{description}}</p>
+									<p><a href="{{{link}}}" target="_blank">View project</a></p>
+								</div>
+							</div>
+							{{/projects}}
+						</div>
+					</div>
+				</section>
+
+				<section class="contact" id="contact_section">
+					<div class="container section-box">
+						<h3 class="align-center">{{page.contact_section.title}}</h3>
+						<img class="contact-img" src="{{{page.profile_section.img_profile}}}" alt=""/>
+						<div class="contact-details">
+							<p>{{page.contact_section.description}}</p>
+							<p>Drop me a line at <span class="font-color">{{page.contact_section.email}}</span> or you can call me at <span class="font-color">{{page.contact_section.phone}}</span>.
+							<ul class="contact-social">
+								{{#global.social.linkedin.show_or_hide}}
+									<li><a href="{{{global.social.linkedin.link}}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+								{{/global.social.linkedin.show_or_hide}}
+
+								{{#global.social.twitter.show_or_hide}}
+									<li><a href="{{{global.social.twitter.link}}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								{{/global.social.twitter.show_or_hide}}
+
+								{{#global.social.facebook.show_or_hide}}
+									<li><a href="{{{global.social.facebook.link}}}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+								{{/global.social.facebook.show_or_hide}}
+
+								{{#global.social.skype.show_or_hide}}
+									<li><a href="{{{global.social.skype.link}}}" target="_blank"><i class="fab fa-skype"></i></a></li>
+								{{/global.social.skype.show_or_hide}}
+
+								{{#global.social.gmail.show_or_hide}}
+									<li><a href="{{{global.social.gmail.link}}}" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+								{{/global.social.gmail.show_or_hide}}
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
 			
 			{{>footer}}
 		</div>
+
+		<script>
+			window.__PRELOADED__ = {{{preloaded}}}
+		</script>
 
 		<!-- Vertex library for enabling site updates from https://www.vertex360.co -->
     	<script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
 
 		{{>scripts}}
+
+		<script type="text/javascript">
+            (function(){
+            
+                var data = window.__PRELOADED__;
+                var pageData = data.page;
+                var skills = pageData.skills_section.tags;
+                var skillsArr = skills.split(",");
+                var skillHTML = "";
+                skillsArr.forEach(function(skill, i) {
+                    skillHTML += '<span class="skill-tag">' + skill + "</span>";
+                })
+                $("#skill-tags").html(skillHTML);
+            })()
+    	</script>
 		
 	</body>
 </html>

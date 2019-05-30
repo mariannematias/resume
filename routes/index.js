@@ -20,6 +20,11 @@ router.get('/', (req, res) => {
 	})
 	.then(schools => {
 		data['schools'] = schools
+		const projectsCtr = new controllers.project()
+		return projectsCtr.get()
+	})
+	.then(projects => {
+		data['projects'] = projects
 		const postsCtr = new controllers.post()
 		return postsCtr.get({limit:3})
 	})

@@ -1,26 +1,30 @@
 <header>
 	<div class="container-fluid">
 		<ul class="header-social">
-			{{#global.header.social.linkedin.show_or_hide}}
-				<li><a href="{{{global.header.social.linkedin.link}}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-			{{/global.header.social.linkedin.show_or_hide}}
+			{{#global.social.linkedin.show_or_hide}}
+				<li><a href="{{{global.social.linkedin.link}}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+			{{/global.social.linkedin.show_or_hide}}
 
-			{{#global.header.social.twitter.show_or_hide}}
-				<li><a href="{{{global.header.social.twitter.link}}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
-			{{/global.header.social.twitter.show_or_hide}}
+			{{#global.social.twitter.show_or_hide}}
+				<li><a href="{{{global.social.twitter.link}}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+			{{/global.social.twitter.show_or_hide}}
 
-			{{#global.header.social.facebook.show_or_hide}}
-				<li><a href="{{{global.header.social.facebook.link}}}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-			{{/global.header.social.facebook.show_or_hide}}
+			{{#global.social.facebook.show_or_hide}}
+				<li><a href="{{{global.social.facebook.link}}}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+			{{/global.social.facebook.show_or_hide}}
 
-			{{#global.header.social.skype.show_or_hide}}
-				<li><a href="{{{global.header.social.skype.link}}}" target="_blank"><i class="fab fa-skype"></i></a></li>
-			{{/global.header.social.skype.show_or_hide}}
+			{{#global.social.skype.show_or_hide}}
+				<li><a href="{{{global.social.skype.link}}}" target="_blank"><i class="fab fa-skype"></i></a></li>
+			{{/global.social.skype.show_or_hide}}
 
-			{{#global.header.social.gmail.show_or_hide}}
-				<li><a href="{{{global.header.social.gmail.link}}}" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-			{{/global.header.social.gmail.show_or_hide}}
+			{{#global.social.gmail.show_or_hide}}
+				<li><a href="{{{global.social.gmail.link}}}" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+			{{/global.social.gmail.show_or_hide}}
 		</ul>
+
+		<div class="btn-list">
+			<a href="#"><button class="btn btn-download"><i class="fas fa-download"></i>{{global.btn_text}}</button></a>
+		<div>
 
 		<p><img class="profile-img" src="{{{page.profile_section.img_profile}}}" alt=""/></p>
 	</div>
