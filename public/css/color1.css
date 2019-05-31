@@ -34,3 +34,6 @@ header {
 .btn-download {
     background: #008fa1;
 }
+.contact-social li a:hover {
+    color: #00BCD4;
+}

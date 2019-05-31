@@ -50,6 +50,20 @@ $(document).ready(function(){
         return (matchedClasses || []).join('')
     }
 
+    $(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 400) {
+				$('.back-to-top').fadeIn(1000);
+			} else {
+				$('.back-to-top').fadeOut(500);
+			}
+		});
+    });
+
+    $(".back-to-top").click(function () {
+        $("html, body").animate({scrollTop: 0}, 1000);
+    });
+
     $(".chart").easyPieChart({
         barColor: '#00BCD4',
         trackColor: '#f2f2f2',

@@ -155,7 +155,7 @@
 						<h3 class="align-center">{{page.portfolio_section.title}}</h3>
 						<div class="row">
 							{{#projects}}
-							<div class="col-md-3 col-sm-12 portfolio-box">
+							<div class="col-lg-3 col-md-6 col-sm-12 portfolio-box">
 								<img src="{{{image}}}"/>
 								<div class="inner-box">
 									<h5>{{name}}</h5>
@@ -174,7 +174,7 @@
 						<img class="contact-img" src="{{{page.profile_section.img_profile}}}" alt=""/>
 						<div class="contact-details">
 							<p>{{page.contact_section.description}}</p>
-							<p>Drop me a line at <span class="font-color">{{page.contact_section.email}}</span> or you can call me at <span class="font-color">{{page.contact_section.phone}}</span>.
+							<p>{{page.contact_section.email_text}} <span class="font-color">{{page.contact_section.email}}</span> {{page.contact_section.phone_text}} <span class="font-color">{{page.contact_section.phone}}</span>.
 							<ul class="contact-social">
 								{{#global.social.linkedin.show_or_hide}}
 									<li><a href="{{{global.social.linkedin.link}}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -202,6 +202,7 @@
 			</div>
 			
 			{{>footer}}
+			<span><a href="#" class="back-to-top"><i class="font-color fas fa-chevron-circle-up"></i></a></span>
 		</div>
 
 		<script>

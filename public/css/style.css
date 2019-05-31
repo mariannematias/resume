@@ -90,6 +90,22 @@ header {
 }
 
 /*** Sections ***/
+#vertex-container {
+    position: relative;
+}
+.back-to-top {
+    font-size: 2.2rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 21;
+    display: none;
+}
+.back-to-top:hover {
+    opacity: .8;
+}
 .profile {
     padding: 9rem 0 6.5rem;
     position: relative;
@@ -178,7 +194,7 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 20;
 }
 .nav .nav-list {
     margin: auto;
@@ -198,16 +214,14 @@ header {
 }
 .section-box {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    border-radius: 3px;
     padding: 3rem 5rem;
     background: #fff;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
     color: #444;
 }
 .section-box h3 {
     margin-bottom: 3rem;
-}
-.experience {
-    padding-top: 4rem;
 }
 .job-details {
     position: absolute;
@@ -356,7 +370,7 @@ p.sub {
 }
 .contact-social li {
     display: inline-block;
-    margin-right: .5rem;
+    margin-right: .8rem;
 }
 .contact-social li a {
     color: #8a8a8a;
@@ -365,11 +379,108 @@ p.sub {
 .carousel-indicators {
     bottom: -3rem;
 }
-footer .copyright {
+footer {
     background: #f5f5f5;
+}
+footer p {
     margin-bottom: 0;
     text-align: center;
-    padding: 2rem 0 1.5rem;
+}
+footer .copyright {
+    padding: 4rem 0 1.5rem;
     color: #8a8a8a;
     font-size: .75rem;
+}
+footer .vertex img {
+    width: 160px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .profile p {
+        width: 85%;
+    }
+    .section-box {
+        padding: 3rem 3rem;
+    }
+    .experience .section-box {
+        padding: 3rem 3rem 1rem;
+    }
+    .experience .exp-timeline .work-right {
+        margin-left: 230px;
+    }
+    .container {
+        max-width: 680px;
+    }
+    .profile-img {
+        left: 40%;
+    }
+}
+@media (max-width: 766px) {
+    .item-list {
+        width: 65%;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 680px;
+    }
+    .item-list {
+        width: 100%;
+    }
+    .profile .slide-out {
+        display: none;
+    }
+    .profile-img {
+        left: 30%;
+        top: 8.5rem;
+    }
+    .btn-list {
+        margin-top: 1rem;
+        float: none;
+        padding-left: .5rem;
+    }
+    header {
+        padding: 1rem 0 7rem;
+    }
+    .profile {
+        padding: 7rem 0 6.5rem;
+    }
+    .experience .exp-timeline .work-right {
+        margin-left: 0;
+    }
+    .job-details {
+        position: initial;
+        margin-top: 1rem;
+        left: 0;
+        top: 0;
+    }
+    .school-list {
+        margin-top: 2rem;
+    }
+    .skill-box {
+        width: 100%;
+    }
+    .testimonial .section-box {
+        padding: 3rem 1rem 5rem;
+    }
+    .portfolio .section-box {
+        padding: 3rem 2rem 2rem;
+    }
+    .contact .contact-details {
+        margin-left: 0;
+        text-align: center;
+    }
+    .contact-img {
+        position: initial;
+        display: block;
+        margin: 1rem auto;
+    }
 }
