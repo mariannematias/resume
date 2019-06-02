@@ -6,10 +6,12 @@
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet."
   },
   "experiences_section": {
-    "title": "Work Experiences"
+    "title": "Work Experiences",
+    "show_or_hide": true
   },
   "education_section": {
-    "title": "Education"
+    "title": "Education",
+    "show_or_hide": true
   },
   "skills_section": {
     "title": "Professional Skills",
@@ -35,7 +37,8 @@
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient."
       }
     },
-    "tags": "HTML5, CSS3, SASS, LESS, Git, PHP, Wordpress, Chinese, French"
+    "tags": "HTML5, CSS3, SASS, LESS, Git, PHP, Wordpress, Chinese, French",
+    "show_or_hide": true
   },
   "testimonial_section": {
     "title": "Testimonials",
@@ -55,7 +58,8 @@
         "name": "Austin Ward",
         "position": "Lead Manager, StartUp"
       }
-    }
+    },
+    "show_or_hide": true
   },
   "portfolio_section": {
     "title": "Portfolio"
@@ -66,6 +70,7 @@
     "email_text": "Drop me a line at",
     "email": "frank@yourdomain.com",
     "phone_text": "or you can call me at",
-    "phone": "012-3456-7890"
+    "phone": "012-3456-7890",
+    "show_or_hide": true
   }
 }
